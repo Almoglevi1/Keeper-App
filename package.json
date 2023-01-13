@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Almoglevi1.github.io/Keeper-App",
   "name": "using-pre-built-react-components",
   "version": "1.0.0",
   "description": "",
@@ -16,10 +17,13 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "typescript": "4.9.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
